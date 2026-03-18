@@ -1,3 +1,79 @@
+:root {
+    --border: 5px solid rgb(95, 14, 160);
+}
+
 #body {
-    background: linear-gradient(90deg, rgb(252, 165, 241) 1.8%, rgb(181, 255, 255) 100.5%);
+    background: linear-gradient(90deg, rgb(178, 165, 252) 1.8%, rgb(227, 181, 255) 100.5%);
+}
+
+.profile-container {
+    max-width: 900px;
+    margin-top: 35px;
+}
+
+.panel {
+    background-color: rgba(0, 0, 0, 0.9);
+    border: var(--border);
+    color: #d1d1d1;
+    padding: 15px;
+    margin-bottom: 15px;
+}
+
+.panel h5, .panel h4 {
+    color: #a32cc4;
+    border-bottom: var(--border);
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.contact-links ul {
+    list-style: none;
+    padding: 0;
+    text-align: right;
+}
+
+.contact-links li {
+    margin-bottom: 5px;
+    color: #a32cc4;
+}
+
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    background-color: #333;
+    display: block;
+    border: 1px solid #fff;
+}
+
+dl {
+    margin-bottom: 0;
+}
+
+dt {
+    color: #a32cc4;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+dd {
+    margin-bottom: 10px;
+    margin-left: 0;
+}
+
+.friend-grid {
+    display: flex;
+    gap: 15px;
+}
+
+.friend-item {
+    text-align: center;
+}
+
+.friend-pic {
+    width: 80px;
+    height: 80px;
+    background-color: #333;
+    border: 1px solid #fff;
 }
