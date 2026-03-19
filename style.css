@@ -1,9 +1,15 @@
 :root {
-    --border: 5px solid rgb(95, 14, 160);
+    --primary-color: rgb(98, 0, 255);
+    --accent-color:rgb(55, 6, 134);
+    --border: 5px solid var(--accent-color);
 }
 
 #body {
     background: linear-gradient(90deg, rgb(178, 165, 252) 1.8%, rgb(227, 181, 255) 100.5%);
+}
+
+.accent-color {
+    color: var(--accent-color);
 }
 
 .profile-container {
@@ -12,20 +18,24 @@
 }
 
 .panel {
-    background-color: rgba(0, 0, 0, 0.9);
+    background-color: rgba(213, 186, 255, 0.9);
     border: var(--border);
-    color: #d1d1d1;
+    color: var(--primary-color);
     padding: 15px;
     margin-bottom: 15px;
 }
 
 .panel h5, .panel h4 {
-    color: #a32cc4;
+    color: var(--accent-color);
     border-bottom: var(--border);
     padding-bottom: 5px;
     margin-bottom: 15px;
     font-size: 16px;
     font-weight: bold;
+}
+
+#name img {
+    height: 30px;
 }
 
 .contact-links ul {
@@ -36,7 +46,7 @@
 
 .contact-links li {
     margin-bottom: 5px;
-    color: #a32cc4;
+    color: var(--accent-color);
 }
 
 .profile-pic {
@@ -47,12 +57,18 @@
     border: 1px solid #fff;
 }
 
+.website-btn {
+    padding: 10px;
+    border-radius: 5px;
+    background: var(--primary-color);
+}
+
 dl {
     margin-bottom: 0;
 }
 
 dt {
-    color: #a32cc4;
+    color: var(--accent-color);
     font-weight: bold;
     margin-top: 10px;
 }
@@ -62,18 +78,11 @@ dd {
     margin-left: 0;
 }
 
-.friend-grid {
+.poke-grid {
     display: flex;
-    gap: 15px;
+    justify-content: center;
 }
 
-.friend-item {
+.poke-item {
     text-align: center;
-}
-
-.friend-pic {
-    width: 80px;
-    height: 80px;
-    background-color: #333;
-    border: 1px solid #fff;
 }
